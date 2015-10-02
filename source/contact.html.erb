@@ -1,0 +1,11 @@
+
+<div class="container">
+<h1> Contacts </h1>
+
+<% data.contacts.each do |contact| %>
+ <div class="col-md-4">
+  <h2><%= contact.name %></h2>
+  <%= image_tag contact.image, class: "img-responsive" %>
+</div>
+<% end %>
+</div>

@@ -1,0 +1,19 @@
+- name: Rugby
+  status: Popular
+  description: Get ready for the try !
+  image: rugby.jpg
+  link: http://www.ffr.fr/
+  avatar: go.gif
+- name: Soccer
+  status: Popular
+  description: Pursue your goals !
+  image: soccer.jpg
+  link: http://www.fff.fr/
+  avatar: go.gif
+- name: Tennis
+  status: Popular
+  description: Set and Match
+  image: tennis.jpg
+  link: http://www.fft.fr/
+  avatar: go.gif
+
