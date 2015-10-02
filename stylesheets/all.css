@@ -9128,6 +9128,37 @@ button.close {
 .fa-meanpath:before {
   content: ""; }
 
+/* line 1, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/layout/_footer.css.scss */
+footer {
+  background-image: url("../images/wooden-background.jpg");
+  padding: 10px;
+  color: black; }
+
+/* line 7, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/layout/_footer.css.scss */
+.social-links a {
+  color: black;
+  font-size: 20px; }
+
+/* line 12, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/layout/_footer.css.scss */
+.social-links a:hover {
+  color: #EE964B;
+  transition: all 1s;
+  text-decoration: none; }
+
+/* line 18, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/layout/_footer.css.scss */
+.credits,
+.social-links {
+  display: inline-block; }
+
+/* line 23, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/layout/_footer.css.scss */
+.social-links li {
+  margin: 5px; }
+
+/* line 27, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/layout/_footer.css.scss */
+.credits {
+  float: right;
+  line-height: 30px; }
+
 /* line 1, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/layout/_navbar.css.scss */
 .navbar-wagon {
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 0 0 rgba(0, 0, 0, 0.03);
@@ -9306,6 +9337,89 @@ button.close {
   .icon-badge-bordered, .user-badge-bordered {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     border: white 1px solid; }
+
+/* line 1, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/components/_banner.scss */
+.banner {
+  background-image: url("../images/FullSizeRender.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0; }
+
+/* line 9, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/components/_banner.scss */
+.banner-shadow {
+  background-color: rgba(255, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(161, 219, 255, 0.5) 0%, rgba(161, 219, 255, 0.5) 1%, rgba(124, 173, 241, 0.5) 12%, rgba(78, 115, 224, 0.58) 26%, rgba(161, 219, 255, 0.83) 70%, #f0f9ff 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80a1dbff', endColorstr='#f0f9ff',GradientType=1 ); }
+
+/* line 27, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/components/_banner.scss */
+.content {
+  padding: 100px;
+  color: white;
+  z-index: 2;
+  position: relative; }
+
+/* line 1, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/components/_card.scss */
+.card {
+  position: relative;
+  height: 175px;
+  margin: 10px 0; }
+
+/* line 7, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/components/_card.scss */
+.card-bg {
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  background-size: cover; }
+
+/* line 16, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/components/_card.scss */
+.card-description,
+.card-text,
+.card-user {
+  position: absolute;
+  z-index: 1;
+  color: #FFFFFF; }
+
+/* line 24, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/components/_card.scss */
+.card-text {
+  bottom: 0;
+  left: 5px; }
+
+/* line 29, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/components/_card.scss */
+.card-user {
+  right: 5px;
+  top: 5px; }
+
+/* line 34, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/components/_card.scss */
+.card-description {
+  left: 5px;
+  top: 5px; }
+
+/* line 39, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/components/_card.scss */
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 3; }
+
+/* line 47, /Users/theo/code/Theolem/Frontend-Advanced-Exercise/source/stylesheets/components/_card.scss */
+.card-link:hover {
+  background-color: rgba(0, 0, 0, 0.4); }
 
 /*
 ==============================================

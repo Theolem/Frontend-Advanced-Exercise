@@ -10,6 +10,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Le Wagon Middleman boilerplate</title>
 
@@ -67,12 +73,471 @@
 
   </div>
 </nav>
-    <div class="welcome text-center padded">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <a href="http://middlemanapp.com/">Read Online Documentation</a>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+    <!-- Banner -->
+<div class="banner">
+  <div class="banner-shadow"></div>
+  <div class="content text-center">
+    <h1>Find me a club</h1>
+    <h2>For ambitious athlets. Find your crew.</h2>
+    <a class="btn btn-primary btn-lg" href="contact.html">GET IT</a>
+  </div>
+</div>
+
+<!-- Cards -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <h3> <img src="images/chat.png" /> Discuss best clubs </h3>
+      <p>What is the best tool for calling your friends or leaving them a message ? Come discuss   with the community !</p>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+      <h3> <img src="images/mobile.png" /> Always in sync </h3>
+      <p> Share it anywhere !</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <h3> <img src="images/search.png" /> Powerful search</h3>
+      <p> We offer some of the most powerful searching tools in the world. Use them to gather and     look for your customers' data. </p>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+      <h3> <img src="images/heart.png" /> Share the Love</h3>
+      <p> "I don't feel the love Danny". Don't be a noob ! Tell others about your success story and
+        our collaboration. Spread the word. </p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="container">
+    <div class="col-xs-12 col-sm-4">
+      <div class="card">
+        <span class="card-bg" style="background-image: url(images/rugby.jpg)"></span>
+        <span class="card-shadow"></span>
+        <span class="card-description">Popular</span>
+        <span class="card-text">
+          <h2>Rugby</h2>
+          <p>Get ready for the try !</p>
+        </span>
+        <span class="card-user">
+          <img class="avatar avatar-bordered img-circle" src="images/go.gif" />
+          <a class="card-link" target="_blank" href="http://www.ffr.fr/"></a>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4">
+      <div class="card">
+        <span class="card-bg" style="background-image: url(images/soccer.jpg)"></span>
+        <span class="card-shadow"></span>
+        <span class="card-description">Popular</span>
+        <span class="card-text">
+          <h2>Soccer</h2>
+          <p>Pursue your goals !</p>
+        </span>
+        <span class="card-user">
+          <img class="avatar avatar-bordered img-circle" src="images/go.gif" />
+          <a class="card-link" target="_blank" href="http://www.fff.fr/"></a>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4">
+      <div class="card">
+        <span class="card-bg" style="background-image: url(images/tennis.jpg)"></span>
+        <span class="card-shadow"></span>
+        <span class="card-description">Popular</span>
+        <span class="card-text">
+          <h2>Tennis</h2>
+          <p>Set and Match</p>
+        </span>
+        <span class="card-user">
+          <img class="avatar avatar-bordered img-circle" src="images/go.gif" />
+          <a class="card-link" target="_blank" href="http://www.fft.fr/"></a>
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center padded">
+    <div class="col-xs-12">
+      <h3> Get news from us !</h3>
+      <p> Leave us your mail and get stylus news </p>
+      <input type="email" id="exampleInputEmail1" placeholder="Email">
+      <input type="submit" class="btn btn-primary"></input>
+    </div>
+  </div>
+
+  <hr>
+
+</div>
+</div>
+
+<div id="map" style="width: 100%; height: 400px;"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript">
+var myLatlng = new google.maps.LatLng(48.833838,2.330059);
+var myOptions = {
+  zoom: 16,
+  center: myLatlng,
+  scrollwheel: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  styles: [
+
+  {
+    "featureType": "administrative",
+    "elementType": "all",
+    "stylers": [
+    {
+      "visibility": "simplified"
+    }
+    ]
+  },
+  {
+    "featureType": "landscape",
+    "elementType": "geometry",
+    "stylers": [
+    {
+      "visibility": "simplified"
+    },
+    {
+      "color": "#fcfcfc"
+    }
+    ]
+  },
+  {
+    "featureType": "landscape.man_made",
+    "elementType": "geometry.fill",
+    "stylers": [
+    {
+      "color": "#e2e2e2"
+    }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [
+    {
+      "visibility": "simplified"
+    },
+    {
+      "color": "#fcfcfc"
+    }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "geometry.fill",
+    "stylers": [
+    {
+      "color": "#e2e2e2"
+    }
+    ]
+  },
+  {
+    "featureType": "poi.attraction",
+    "elementType": "labels.text.fill",
+    "stylers": [
+    {
+      "saturation": "-100"
+    }
+    ]
+  },
+  {
+    "featureType": "poi.business",
+    "elementType": "labels.text.fill",
+    "stylers": [
+    {
+      "saturation": "-100"
+    }
+    ]
+  },
+  {
+    "featureType": "poi.business",
+    "elementType": "labels.icon",
+    "stylers": [
+    {
+      "saturation": "-100"
+    }
+    ]
+  },
+  {
+    "featureType": "poi.medical",
+    "elementType": "labels.text.fill",
+    "stylers": [
+    {
+      "saturation": "-100"
+    }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry.fill",
+    "stylers": [
+    {
+      "color": "#afca89"
+    }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+    {
+      "saturation": "-100"
+    }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+    {
+      "saturation": "-100"
+    }
+    ]
+  },
+  {
+    "featureType": "poi.school",
+    "elementType": "geometry.fill",
+    "stylers": [
+    {
+      "color": "#e2e2e2"
+    }
+    ]
+  },
+  {
+    "featureType": "poi.school",
+    "elementType": "labels.text.fill",
+    "stylers": [
+    {
+      "saturation": "-100"
+    }
+    ]
+  },
+  {
+    "featureType": "poi.sports_complex",
+    "elementType": "geometry.fill",
+    "stylers": [
+    {
+      "color": "#e2e2e2"
+    }
+    ]
+  },
+  {
+    "featureType": "poi.sports_complex",
+    "elementType": "labels.text.fill",
+    "stylers": [
+    {
+      "saturation": "-100"
+    }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry.fill",
+    "stylers": [
+    {
+      "color": "#ffffff"
+    }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry.stroke",
+    "stylers": [
+    {
+      "color": "#ffffff"
+    }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+    {
+      "visibility": "simplified"
+    },
+    {
+      "color": "#dddddd"
+    }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry.fill",
+    "stylers": [
+    {
+      "color": "#ffffff"
+    }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
+    {
+      "color": "#ffffff"
+    }
+    ]
+  },
+  {
+    "featureType": "road.highway.controlled_access",
+    "elementType": "geometry.fill",
+    "stylers": [
+    {
+      "color": "#ffffff"
+    }
+    ]
+  },
+  {
+    "featureType": "road.highway.controlled_access",
+    "elementType": "geometry.stroke",
+    "stylers": [
+    {
+      "color": "#ff0000"
+    }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+    {
+      "visibility": "simplified"
+    },
+    {
+      "color": "#dddddd"
+    }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry.fill",
+    "stylers": [
+    {
+      "color": "#ffffff"
+    }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry.stroke",
+    "stylers": [
+    {
+      "color": "#ff0000"
+    }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "geometry",
+    "stylers": [
+    {
+      "visibility": "simplified"
+    },
+    {
+      "color": "#eeeeee"
+    }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "geometry.fill",
+    "stylers": [
+    {
+      "color": "#ffffff"
+    }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "geometry.stroke",
+    "stylers": [
+    {
+      "color": "#ffffff"
+    }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+    {
+      "color": "#565656"
+    }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "geometry.fill",
+    "stylers": [
+    {
+      "color": "#ffffff"
+    }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+    {
+      "visibility": "simplified"
+    },
+    {
+      "color": "#dddddd"
+    }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry.fill",
+    "stylers": [
+    {
+      "color": "#a0d3d3"
+    }
+    ]
+    }] // TODO: replace [] by array from https://snazzymaps.com/
+  };
+
+  var map = new google.maps.Map(document.getElementById('map'), myOptions);
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: "You are here!"
+  });
+  </script>
+
+</body>
+</html>
+
+    <footer>
+  <ul class="social-links list-inline">
+    <li>
+<a href="http://twitter.com">      <i class="fa fa-twitter"></i>
+</a>    </li>
+    <li>
+<a href="http://facebook.com">      <i class="fa fa-facebook"></i>
+</a>    </li>
+    <li>
+<a href="http://linkedin.com">      <i class="fa fa-linkedin"></i>
+</a>    </li>
+    <li>
+<a href="http://youtube.com">      <i class="fa fa-youtube"></i>
+</a>    </li>
+  </ul>
+  <p class="credits">
+    Made with <i class="fa fa-heart"></i> at Le Wagon
+  </p>
+</footer>
 
 
   </body>
